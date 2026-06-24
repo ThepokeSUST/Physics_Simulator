@@ -1,5 +1,6 @@
 package com.physicssim.components;
 
+import java.net.URL;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -36,11 +37,15 @@ public class PhysicsButton extends Button {
                         Style style) {
 
         getStyleClass().add("physics-button");
-
-        String css = "/resources/style/css/PhysicsButton.css";
-
-        if (!getStylesheets().contains(css)) {
-            getStylesheets().add(css);
+        
+        URL resource = getClass().getResource("/resources/style/css/PhysicsButton.css"); // Note: Usually 'src/main/resources' becomes the root '/'
+        if (resource != null) {
+            String url = resource.toExternalForm();
+            if (!getStylesheets().contains(url)) {
+                getStylesheets().add(url);
+            }
+        } else {
+            System.err.println("Warning: Could not find CSS file at " + resource);
         }
 
         switch (style) {

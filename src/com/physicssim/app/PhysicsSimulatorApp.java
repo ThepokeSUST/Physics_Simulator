@@ -13,7 +13,7 @@ public class PhysicsSimulatorApp extends Application {
     public void start(Stage stage) {
         Scene scene = new Scene(new AppShell(), WINDOW_WIDTH, WINDOW_HEIGHT);
 
-        stage.setTitle("Physics Simulator - R13");
+        stage.setTitle("Physics Simulator");
         stage.setScene(scene);
         stage.setMinWidth(960);
         stage.setMinHeight(620);
