@@ -1,12 +1,10 @@
 #!/bin/bash
 set -e
 
-# JavaFX path
 JAVAFX_PATH="lib/javafx_mac_binary/javafx-sdk-21.0.11/lib"
 
 mkdir -p bin
 
-# Compile
 javac \
     --module-path "$JAVAFX_PATH" \
     --add-modules javafx.controls,javafx.graphics \
@@ -18,9 +16,12 @@ javac \
     src/com/physicssim/views/*.java \
     src/com/physicssim/navigation/*.java \
     src/com/physicssim/features/pendulum/*.java \
+    src/com/physicssim/features/mechanics/*.java \
     src/com/physicssim/features/simulations/*.java
 
-# Run
+# Copy resources
+cp -R src/resources/* bin/
+
 java \
     --module-path "$JAVAFX_PATH" \
     --add-modules javafx.controls,javafx.graphics \
