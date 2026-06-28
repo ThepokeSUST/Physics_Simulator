@@ -14,7 +14,7 @@ import javafx.scene.text.FontWeight;
 
 public final class AppTheme {
 
-    public static final Color PAGE_BACKGROUND = Color.web("#f5f7fb");
+    public static final Color PAGE_BACKGROUND = Color.web("#353941");
     public static final Color SURFACE = Color.WHITE;
     public static final Color BORDER = Color.web("#d9e1ea");
     public static final Color CARD_BORDER = Color.web("#dbe5ec");

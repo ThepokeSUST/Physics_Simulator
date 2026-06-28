@@ -17,6 +17,9 @@ public final class SimulationCatalog {
                 new SimulationItem("(3)", "Kinematics", SimulationType.KINEMATICS),
                 new SimulationItem("(5)", "Data Analysis", SimulationType.ANALYTICS),
                 new SimulationItem("(6)", "Electricity\nCurrent electricity", SimulationType.ELECTRICITY),
-                new SimulationItem("(7)", "Atomic &\nNuclear Physics", SimulationType.ATOMIC_NUCLEAR));
+                new SimulationItem("(7)", "Atomic &\nNuclear Physics", SimulationType.ATOMIC_NUCLEAR),
+                new SimulationItem("(4)", "Vector\nFundamentals", SimulationType.VECTOR),
+                new SimulationItem("(6)", "Data Analysis", SimulationType.ANALYTICS),
+                new SimulationItem("(7)", "Electricity\nCurrent electricity", SimulationType.ELECTRICITY));
     }
 }

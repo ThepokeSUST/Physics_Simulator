@@ -1,13 +1,8 @@
 package com.physicssim.features.gravity;
 
-import com.physicssim.model.gravity.Body;
-import com.physicssim.model.gravity.Vector2D;
 import com.physicssim.model.gravity.NBodyModel;
-
 import javafx.animation.AnimationTimer;
-import javafx.geometry.Pos;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.control.ScrollPane;
 
 /**

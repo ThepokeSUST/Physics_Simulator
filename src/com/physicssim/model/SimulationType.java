@@ -7,5 +7,6 @@ public enum SimulationType {
     ANALYTICS,
     ELECTRICITY,
     KINEMATICS,
-    ATOMIC_NUCLEAR
+    ATOMIC_NUCLEAR,
+    VECTOR
 }

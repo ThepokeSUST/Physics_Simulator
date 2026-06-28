@@ -25,7 +25,11 @@ javac ^
     src/com/physicssim/features/simulations/*.java ^
     src/com/physicssim/features/electricity/*.java ^
     src/com/physicssim/features/kinematics/*.java ^
+<<<<<<< HEAD
     src/com/physicssim/features/atomic_nuclear/*.java
+=======
+    src/com/physicssim/features/vector/*.java
+>>>>>>> pr-5
 
 if %errorlevel% neq 0 (
     echo Compilation failed.
